@@ -8,7 +8,7 @@ import os
 #website definition i need
 def open_whatsapp():
     webbrowser.open_new("https://web.whatsapp.com/")
-def open_spotify():
+def open_spotify(): 
     webbrowser.open_new("https://open.spotify.com/")
 def open_word():
     webbrowser.open_new("https://www.office.com/launch/word?auth=1")
@@ -48,7 +48,7 @@ def work():
     
   
     #icon for work
-    #root.iconbitmap("place location for icon.ico here")
+    root.iconbitmap("work.ico")
 
 
     #part for apps i need on work  
@@ -97,10 +97,10 @@ def privHome():
     #tkinter.messagebox.showerror('private', 'now you are at home')
     root=tkinter.Tk()
     root.title('HOME')  
-    root.geometry('1000x500')  
+    root.geometry('500x700')  
     root.configure(bg='darkgreen')
     #icon for work
-    #root.iconbitmap("place location for icon.ico here")
+    root.iconbitmap("home.ico")
 
     #part for my apps
 
@@ -114,7 +114,7 @@ root.geometry('300x100')
 frame1 = Frame(root)
 frame2 = Frame(root)
 root.title("where are you")
-
+root.iconbitmap("start.ico")
 label= Label(frame1,text="choose one",justify=LEFT)
 label.pack(side=LEFT)
 
