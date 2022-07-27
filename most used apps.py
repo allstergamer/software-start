@@ -30,6 +30,26 @@ def open_github():
     webbrowser.open_new("https://github.com/allstergamer")
 def open_drive():
     webbrowser.open_new("https://drive.google.com/")
+def open_udemy():
+    webbrowser.open_new("https://bbw-dresden.udemy.com/")
+def open_azn():
+    os.startfile("H:\AZN")
+
+
+
+
+
+
+
+
+#app icons
+
+
+
+
+
+
+
 
 
 
@@ -38,7 +58,7 @@ def open_drive():
 def work():
     work_there.configure(bg='darkgreen')
     #tkinter.messagebox.showinfo('work', 'now u are working!')
-    tkinter.messagebox.showwarning('work', 'now u are working!')
+    #tkinter.messagebox.showwarning('work', 'now u are working!')
     #tkinter.messagebox.showerror('work', 'now u are working!')
     root=tkinter.Tk()
     
@@ -83,16 +103,26 @@ def work():
     vm = Button(root, text="VM", font=("helvetica", 14), width="40", bg='lightgreen', command=open_vm)
     vm.pack(pady=3)
 
-    github = Button(root, text="github", font=("helvetica", 14), width="40", bg='lightgreen', command=open_github)
+    github = Button(root, text="github", font=("helvetica", 14), width="40", bg='lightgreen' ,command=open_github)
     github.pack(pady=3)
 
     googledrive = Button(root, text="Google Drive", font=("helvetica", 14), width="40", bg='lightgreen', command=open_drive)
     googledrive.pack(pady=3)
 
+    azn = Button(root, text="Ausbildungsnachweise", font=("helvetica", 14), width="40", bg='lightgreen', command=open_azn)
+    azn.pack(pady=3)
+
+
+
+
+
+
+
+
 def privHome():
     privHome.configure(bg='darkgreen') 
     print("now you are at home")
-    tkinter.messagebox.showinfo('private', 'now you are at home')
+    #tkinter.messagebox.showinfo('private', 'now you are at home')
     #tkinter.messagebox.showwarning('private', 'now you are at home')
     #tkinter.messagebox.showerror('private', 'now you are at home')
     root=tkinter.Tk()
