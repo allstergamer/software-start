@@ -41,7 +41,12 @@ def open_azn():
     os.startfile("H:\AZN")
 
 
-
+def login_wh():
+    webbrowser.open_new("https://gw.srhk.net:4100/")
+def pihole_login():
+    webbrowser.open_new("https://192.168.8.50/admin")
+def moodle_login():
+    webbrowser.open_new("https://online-learning-bbws.de/login/index.php")
 
 
 
@@ -75,45 +80,48 @@ def work():
 
 
     #part for apps i need on work  
-
-    whatsapp_web = Button(worked, text="web.whatsapp.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_whatsapp)
-    whatsapp_web.pack(pady=3)
-
-    spotify = Button(worked, text="spotify.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_spotify)
-    spotify.pack(pady=3)
-
-    outlook = Button(worked, text="outlook", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_outlook)
-    outlook.pack(pady=3)
-
-    word = Button(worked, text="word", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_word)
-    word.pack(pady=3)
-
-    excell = Button(worked, text="excell", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_excell)
-    excell.pack(pady=3)
-
-    powerpoint = Button(worked, text="powerpoint", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_powerpoint)
-    powerpoint.pack(pady=3)
-
-    gmail0 = Button(worked, text="gmail 1", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail1)
-    gmail0.pack(pady=3)
-
-    gmail1 = Button(worked, text="gmail 2", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail2)
-    gmail1.pack(pady=3)
-
-    gmail2 = Button(worked, text="gmail 3", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail3)
-    gmail2.pack(pady=3)
-    
-    vm = Button(worked, text="VM", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_vm)
-    vm.pack(pady=3)
-
-    github = Button(worked, text="github", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)) ,command=open_github)
-    github.pack(pady=3)
-
-    googledrive = Button(worked, text="Google Drive", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_drive)
-    googledrive.pack(pady=3)
+    moodle = Button(worked, text="Moodle", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=moodle_login)
+    moodle.pack(pady=5)
 
     azn = Button(worked, text="Ausbildungsnachweise", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_azn)
-    azn.pack(pady=3)
+    azn.pack(pady=5)
+
+    outlook = Button(worked, text="outlook", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_outlook)
+    outlook.pack(pady=5)
+
+    word = Button(worked, text="word", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_word)
+    word.pack(pady=5)
+
+    excell = Button(worked, text="excell", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_excell)
+    excell.pack(pady=5)
+
+    powerpoint = Button(worked, text="powerpoint", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_powerpoint)
+    powerpoint.pack(pady=5)
+
+    gmail0 = Button(worked, text="gmail 1", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail1)
+    gmail0.pack(pady=5)
+
+    gmail1 = Button(worked, text="gmail 2", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail2)
+    gmail1.pack(pady=5)
+
+    gmail2 = Button(worked, text="gmail 3", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_gmail3)
+    gmail2.pack(pady=5)
+    
+    vm = Button(worked, text="VM", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_vm)
+    vm.pack(pady=5)
+
+    github = Button(worked, text="github", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)) ,command=open_github)
+    github.pack(pady=5)
+
+    googledrive = Button(worked, text="Google Drive", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_drive)
+    googledrive.pack(pady=5)
+
+    whatsapp_web = Button(worked, text="web.whatsapp.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_whatsapp)
+    whatsapp_web.pack(pady=5)
+
+    spotify = Button(worked, text="spotify.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_spotify)
+    spotify.pack(pady=5)
+
 
 
 
@@ -136,11 +144,14 @@ def privHome():
     root.iconbitmap("home.ico")
 
     #part for my apps
-
+    wh = Button(root, text="wohnheim login", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=login_wh)
+    wh.pack(pady=5)
+    pihole = Button(root, text="pihole admin dashboard", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=pihole_login)
+    pihole.pack(pady=5)
     whatsapp_web = Button(root, text="web.whatsapp.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_whatsapp)
-    whatsapp_web.pack(pady=3)
+    whatsapp_web.pack(pady=5)
     spotify = Button(root, text="spotify.com", font=("helvetica", 14), width="40", bg=rgb_hack((141, 192, 252)), command=open_spotify)
-    spotify.pack(pady=3)
+    spotify.pack(pady=5)
 
 root = Tk()
 root.geometry('300x100')
@@ -148,14 +159,15 @@ root.geometry('300x100')
 frame1 = Frame(root)
 frame2 = Frame(root)
 root.title("where are you")
+root.configure(bg=rgb_hack((82, 161, 240))) 
 root.iconbitmap("start.ico")
-label= Label(frame1,text="choose one",justify=LEFT)
+label= Label(frame1,text="choose one",justify=LEFT, bg=rgb_hack((82, 161, 240)))
 label.pack(side=LEFT)
 
-work_there = Button(frame2,text="work",width=10, command=work)
+work_there = Button(frame2,text="work",width=10, command=work, bg=rgb_hack((141, 192, 252)))
 work_there.pack()
 
-privHome = Button(frame2,text="private",width=10,command=privHome)
+privHome = Button(frame2,text="private",width=10,command=privHome, bg=rgb_hack((141, 192, 252)))
 privHome.pack()
 
 frame1.pack(padx=1,pady=1)
