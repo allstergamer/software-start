@@ -116,9 +116,7 @@ def work():
     azn.pack(pady=3)
 
 
-    bg = PhotoImage(file="wallpaper.png")
-    bg_label = Label(work, image=bg)
-    bg_label.place(x=0, y=0, relwidth=1, relheight=1)
+
 
 
 
